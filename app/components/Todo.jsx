@@ -2,9 +2,12 @@ import React, {Component} from 'react';
 
 class Todo extends Component {
     render() {
-        let {text} = this.props;
+        let {id, text, completed} = this.props;
         return (
-            <li>
+            <li onClick={() => {
+                this.props.onToggle(id);
+            }}>
+                <input type="checkbox" checked={completed}/>
                 {text}
             </li>
         )
