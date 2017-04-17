@@ -10,7 +10,7 @@ class TodoSearch extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="container__header">
                 <div>
                     <input
                         type="text"
@@ -20,7 +20,7 @@ class TodoSearch extends Component {
                     />
                 </div>
                 <div>
-                    <label htmlFor="">
+                    <label>
                         <input
                             type="checkbox"
                             ref="showCompleted"
